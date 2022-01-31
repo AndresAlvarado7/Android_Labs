@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Laboratorios Android</string>
-    <string name="hello_message">Hola Mundo!</string>
-    <string name="ButtonText">Soy un boton</string>
+    <string name="app_name">Lab2</string>
+    <string name="hello_message">Mira mi GUI</string>
+    <string name="ButtonText">Click aqui</string>
+    <string name="CheckBoxText">Mira esto!</string>
+    <string name="SwitchText">Switch on / off</string>
+    <string name="EditTexttxt">Escribir aqui</string>
+    <string name="toast_message">Mas informacion aqui</string>
+    <string name="snackBar_on">El switch esta encendido</string>
+    <string name="snackBar_off">El switch esta apagado</string>
+    <string name="snackBar_undo">Deshacer</string>
 </resources>

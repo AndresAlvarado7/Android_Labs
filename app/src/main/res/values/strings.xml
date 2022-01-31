@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">Android Labs</string>
-    <string name="hello_message">Hello World!</string>
-    <string name="ButtonText">I\'m a button</string>
+    <string name="app_name">Lab2</string>
+    <string name="hello_message">Look at my GUI</string>
+    <string name="ButtonText">CLICK HERE</string>
+    <string name="CheckBoxText">Check this out!</string>
+    <string name="SwitchText">Switch on / off</string>
+    <string name="EditTexttxt">Type here</string>
+    <string name="toast_message">Here is more information</string>
+    <string name="snackBar_on">The switch is now on</string>
+    <string name="snackBar_off">The switch is now off</string>
+    <string name="snackBar_undo">Undo</string>
+
 </resources>
