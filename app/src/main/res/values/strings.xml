@@ -1,10 +1,19 @@
 <resources>
-    <string name="app_name">Lab2</string>
-    <string name="hello_message">Look at my GUI</string>
-    <string name="ButtonText">CLICK HERE</string>
+    <string name="app_name">Lab3</string>
+    <string name="EmailAddress">Enter your email address:</string>
+    <string name="TypeEmail">Type email here</string>
+    <string name="TypePassword">Type your password:</string>
+    <string name="ButtonText">LOGIN</string>
+    <string name="profile">Your profile</string>
+    <string name="name">Your name:</string>
+    <string name="enterNAme">Enter your name</string>
+    <string name="email">Your email:</string>
+    <string name="enterEmail">Enter your email</string>
+    <string name="picture">Your picture:</string>
+    <string name="ClickButton">Click the button above to take a picture</string>
+
     <string name="CheckBoxText">Check this out!</string>
     <string name="SwitchText">Switch on / off</string>
-    <string name="EditTexttxt">Type here</string>
     <string name="toast_message">Here is more information</string>
     <string name="snackBar_on">The switch is now on</string>
     <string name="snackBar_off">The switch is now off</string>

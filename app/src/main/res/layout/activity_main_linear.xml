@@ -9,70 +9,44 @@
 
 
     <TextView
-        android:id="@+id/myTextView"
-        android:textSize="30dp"
+        android:id="@+id/myTextViewEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_message"
+        android:text="@string/EmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/row2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/midTableLayout"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <Button
-            android:id="@+id/myButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ButtonText"
-            android:layout_weight="1" />
-
-        <CheckBox
-            android:id="@+id/myCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/CheckBoxText"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/row3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2">
-        <ImageButton
-        android:id="@+id/myImageButton"
-        android:layout_width="198dp"
-        android:layout_height="107dp"
-        app:srcCompat="@drawable/flag"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:layout_weight="1" />
-
-    <Switch
-        android:id="@+id/mySwitch"
-        android:layout_width="195dp"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:text="@string/SwitchText"
-        android:checked="false"
-        android:layout_weight="1" />
-    </LinearLayout>
-
     <EditText
-        android:id="@+id/myEditText"
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="@string/EditTexttxt" />
+        android:inputType="textEmailAddress"
+        android:hint="@string/TypeEmail" />
+
+    <TextView
+        android:id="@+id/myTextViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TypePassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonText" />
 
 </LinearLayout>

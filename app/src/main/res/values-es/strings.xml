@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab2</string>
-    <string name="hello_message">Mira mi GUI</string>
-    <string name="ButtonText">Click aqui</string>
+    <string name="app_name">Lab3</string>
+    <string name="EmailAddress">Escribe tu email aqui:</string>
+    <string name="TypeEmail">Escribir email aqui</string>
+    <string name="TypePassword">Escriba su contrasena:</string>
+    <string name="ButtonText">ENTRAR</string>
+    <string name="profile">Tu perfil</string>
+    <string name="name">Tu nombre:</string>
+    <string name="enterNAme">Escribe tu nombre</string>
+    <string name="email">Tu correo electronico:</string>
+    <string name="enterEmail">Escribe tu correo electronico</string>
+    <string name="picture">Tu foto:</string>
+    <string name="ClickButton">Toca el boton de arriba para tomar foto</string>
+
     <string name="CheckBoxText">Mira esto!</string>
     <string name="SwitchText">Switch on / off</string>
-    <string name="EditTexttxt">Escribir aqui</string>
     <string name="toast_message">Mas informacion aqui</string>
     <string name="snackBar_on">El switch esta encendido</string>
     <string name="snackBar_off">El switch esta apagado</string>

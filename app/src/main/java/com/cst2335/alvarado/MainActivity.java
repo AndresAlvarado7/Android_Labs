@@ -3,6 +3,8 @@ package com.cst2335.alvarado;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,31 +19,42 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
+    public final static String PREFERENCES_FILE = "MyData";
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_grid);
+        setContentView(R.layout.activity_main_linear);
 
-        Button myBtn = findViewById(R.id.myButton);
-        myBtn.setOnClickListener((v) -> {
-            Context context = getApplicationContext();
-            CharSequence text = getResources().getString(R.string.toast_message);
-            int duration = Toast.LENGTH_LONG;
-            Toast.makeText(context, text, duration).show();});
+        EditText editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
 
-        Switch mySwitch = findViewById(R.id.mySwitch);
-        mySwitch.setOnCheckedChangeListener((cb, b) ->{
-
-            if(b){
-                Snackbar.make(cb, getResources().getString(R.string.snackBar_on),Snackbar.LENGTH_LONG)
-                .setAction(getResources().getString(R.string.snackBar_undo),click -> cb.setChecked(!b)).show();
-            }else{
-                Snackbar.make(cb, getResources().getString(R.string.snackBar_off),Snackbar.LENGTH_LONG)
-                .setAction(getResources().getString(R.string.snackBar_undo),click -> cb.setChecked(!b)).show();
-            }
-
+        Button myButton = findViewById(R.id.myButton);
+        myButton.setOnClickListener((click) -> {
+            Intent goToProfile = new Intent(MainActivity.this, ProfileActivity.class);
+            goToProfile.putExtra("email",editTextTextEmailAddress.getText().toString());
+            startActivity(goToProfile);
         });
 
 
+        SharedPreferences emailAdd = getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE);
+
+        String s = emailAdd.getString("email","");
+        editTextTextEmailAddress.setText(s);
+
+    }
+
+    @Override
+    protected void onPause(){
+        super.onPause();
+
+        EditText editTextTextEmailAddress = findViewById(R.id.editTextTextEmailAddress);
+
+        SharedPreferences emailAdd = getSharedPreferences(PREFERENCES_FILE,Context.MODE_PRIVATE);
+        SharedPreferences.Editor myEditor = emailAdd.edit();
+        myEditor.putString("email", editTextTextEmailAddress.getText().toString());
+        myEditor.apply();
     }
 }
