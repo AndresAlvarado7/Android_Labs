@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab3</string>
+    <string name="app_name">Lab4</string>
     <string name="EmailAddress">Escribe tu email aqui:</string>
     <string name="TypeEmail">Escribir email aqui</string>
     <string name="TypePassword">Escriba su contrasena:</string>
@@ -12,6 +12,10 @@
     <string name="enterEmail">Escribe tu correo electronico</string>
     <string name="picture">Tu foto:</string>
     <string name="ClickButton">Toca el boton de arriba para tomar foto</string>
+    <string name="ButtonChat">Ir al chat</string>
+    <string name="ButtonSend">Enviar</string>
+    <string name="ButtonReceive">Recibir</string>
+    <string name="TypeChat">Escribe aqui</string>
 
     <string name="CheckBoxText">Mira esto!</string>
     <string name="SwitchText">Switch on / off</string>
