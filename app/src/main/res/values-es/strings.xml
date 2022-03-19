@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab4</string>
+    <string name="app_name">Lab5</string>
     <string name="EmailAddress">Escribe tu email aqui:</string>
     <string name="TypeEmail">Escribir email aqui</string>
     <string name="TypePassword">Escriba su contrasena:</string>
