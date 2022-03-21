@@ -10,6 +10,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -288,8 +289,17 @@ public class ChatRoomActivity extends AppCompatActivity {
     public long getItemId(int position){
         position = 7;
         return position;
+
     }
     public void printCursor(Cursor c, int version){
-        
+
+        Log.v("Version", "Version is: " + theDatabase.getVersion());
+
+        Log.v("ColumnCount", "Number of columns in the cursor: " + c.getColumnCount());
+
+        Log.v("ClomunNmaes", "Name of columns in cursor: " +c.getColumnNames());
+
+        Log.v("RowsNumber", "Number of rows in the cursor: " + c.getCount());
+
     }
 }
