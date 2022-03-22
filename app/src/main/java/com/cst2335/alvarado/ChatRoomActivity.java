@@ -52,6 +52,8 @@ public class ChatRoomActivity extends AppCompatActivity {
         //load from the database:
         Cursor results = theDatabase.rawQuery( "Select * from " + MyOpenHelper.TABLE_NAME + ";", null );//no arguments to the query
 
+        printCursor(results,1);
+
         //Convert column names to indices:
         int idIndex = results.getColumnIndex( MyOpenHelper.COL_ID );
         int  messageIndex = results.getColumnIndex( MyOpenHelper.COL_MESSAGE);
@@ -291,15 +293,16 @@ public class ChatRoomActivity extends AppCompatActivity {
         return position;
 
     }
+
     public void printCursor(Cursor c, int version){
 
-        Log.v("Version", "Version is: " + theDatabase.getVersion());
+        Log.v("LOGS", "Version is: " + theDatabase.getVersion());
 
-        Log.v("ColumnCount", "Number of columns in the cursor: " + c.getColumnCount());
+        Log.v("LOGS", "Number of columns in the cursor: " + c.getColumnCount());
 
-        Log.v("ClomunNmaes", "Name of columns in cursor: " +c.getColumnNames());
+        Log.v("LOGS", "Name of columns in cursor: " +c.getColumnNames());
 
-        Log.v("RowsNumber", "Number of rows in the cursor: " + c.getCount());
+        Log.v("LOGS", "Number of rows in the cursor: " + c.getCount());
 
     }
 }
