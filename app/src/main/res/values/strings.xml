@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab5</string>
+    <string name="app_name">Lab6</string>
     <string name="EmailAddress">Enter your email address:</string>
     <string name="TypeEmail">Type email here</string>
     <string name="TypePassword">Type your password:</string>
@@ -22,5 +22,10 @@
     <string name="snackBar_on">The switch is now on</string>
     <string name="snackBar_off">The switch is now off</string>
     <string name="snackBar_undo">Undo</string>
+
+    <string name="fragment_message">Message Here</string>
+    <string name="fragment_ID">ID=</string>
+    <string name="fragment_check">Is a Send Message</string>
+    <string name="fragment_button">Hide</string>
 
 </resources>

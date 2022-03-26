@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab5</string>
+    <string name="app_name">Lab6</string>
     <string name="EmailAddress">Escribe tu email aqui:</string>
     <string name="TypeEmail">Escribir email aqui</string>
     <string name="TypePassword">Escriba su contrasena:</string>
@@ -23,4 +23,9 @@
     <string name="snackBar_on">El switch esta encendido</string>
     <string name="snackBar_off">El switch esta apagado</string>
     <string name="snackBar_undo">Deshacer</string>
+
+    <string name="fragment_message">Mensaje aqui</string>
+    <string name="fragment_ID">ID=</string>
+    <string name="fragment_check">Es un mensaje de Send</string>
+    <string name="fragment_button">Esconder</string>
 </resources>

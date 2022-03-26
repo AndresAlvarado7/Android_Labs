@@ -3,6 +3,7 @@ package com.cst2335.alvarado;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,8 +15,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -38,6 +41,7 @@ public class ChatRoomActivity extends AppCompatActivity {
     RecyclerView rView;
     MyAdapter theAdapter;   //<<cannot be anonymous<<
     ArrayList<Message> messages = new ArrayList<>();
+    boolean isTablet = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -249,6 +253,21 @@ public class ChatRoomActivity extends AppCompatActivity {
                                     MyOpenHelper.COL_ID +" = ?", new String[] { Long.toString( whatWasClicked.getId() )  });
                         }).create().show();
             });
+
+            itemView.setOnClickListener((list, view, position, id) -> {
+                isTablet = findViewById(R.id.frameLayout) != null;
+                if (isTablet) {
+
+                    // Instance of first fragment
+                    DetailsFragment firstFragment = new DetailsFragment();
+
+                    // Add Fragment to FrameLayout (flContainer), using FragmentManager
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();// begin  FragmentTransaction
+                    ft.setReorderingAllowed(true);
+                    ft.add(R.id.frameLayout, firstFragment);    // add    Fragment
+                    ft.commit();     // commit FragmentTransaction
+
+                }} );
         }
     }
 
