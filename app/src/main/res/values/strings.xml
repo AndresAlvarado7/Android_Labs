@@ -15,6 +15,7 @@
     <string name="ButtonSend">SEND</string>
     <string name="ButtonReceive">RECEIVE</string>
     <string name="TypeChat">Type here</string>
+    <string name="Message_here">Message goes here</string>
 
     <string name="CheckBoxText">Check this out!</string>
     <string name="SwitchText">Switch on / off</string>

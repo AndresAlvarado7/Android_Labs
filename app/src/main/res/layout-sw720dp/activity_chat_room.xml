@@ -1,62 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".ChatRoomActivity">
 
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="300dp"
-        android:layout_height="match_parent" />
-
-
-    <Button
-        android:id="@+id/send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ButtonSend"
-        android:layout_alignStart="@+id/editTextChat"
-        android:layout_alignParentBottom="true"/>
-
-    <EditText
-        android:id="@+id/editTextChat"
+    <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:hint="@string/TypeChat"
-        android:inputType="textPersonName"
-        android:layout_alignParentBottom="true" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/receive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ButtonReceive"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editTextChat"/>
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="1660dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/ButtonSend" />
+
+            <EditText
+                android:id="@+id/editTextChat"
+                android:layout_width="112dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/TypeChat"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/receive"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/ButtonReceive" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="660dp"
-        android:layout_height="match_parent"
-        android:layout_alignRight="@+id/listView"
-        android:layout_alignParentEnd="true" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--     android:id="@+id/myRecycleView"-->
-<!--     android:layout_width="wrap_content"-->
-<!--     android:layout_height="wrap_content"-->
-<!--     app:layout_constraintBottom_toTopOf="@+id/editTextChat"-->
-<!--     app:layout_constraintEnd_toEndOf="parent"-->
-<!--     app:layout_constraintStart_toStartOf="parent"-->
-<!--     app:layout_constraintTop_toTopOf="parent" />-->
-<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
 <!--     android:id="@+id/refresh"-->
 <!--     android:layout_width="wrap_content"-->
 <!--     android:layout_height="0dp"/>-->
 
 
-</RelativeLayout>
+</LinearLayout>

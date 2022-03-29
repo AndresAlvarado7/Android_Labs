@@ -17,6 +17,8 @@
     <string name="ButtonReceive">Recibir</string>
     <string name="TypeChat">Escribe aqui</string>
 
+    <string name="Message_here">Tu mensaje va aqui</string>
+
     <string name="CheckBoxText">Mira esto!</string>
     <string name="SwitchText">Switch on / off</string>
     <string name="toast_message">Mas informacion aqui</string>

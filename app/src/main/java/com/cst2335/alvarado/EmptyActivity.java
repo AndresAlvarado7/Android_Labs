@@ -13,6 +13,8 @@ public class EmptyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_empty);
 
         DetailsFragment firstFragment = new DetailsFragment();
+        Bundle bundle = getIntent().getExtras();
+        firstFragment.setArguments(bundle);
 
         // Add Fragment to FrameLayout (flContainer), using FragmentManager
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();// begin  FragmentTransaction
