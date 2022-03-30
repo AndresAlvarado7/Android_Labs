@@ -81,7 +81,7 @@ public class ChatRoomActivity extends AppCompatActivity {
 
 
             //adding a new message to our history if not empty
-            if ( whatIsTyped.isEmpty()) {
+            if ( !whatIsTyped.isEmpty()) {
 
                 //insert into database:
                 ContentValues newRow = new ContentValues();// like intent or Bundle
@@ -170,15 +170,15 @@ public class ChatRoomActivity extends AppCompatActivity {
                         messages.remove(position);
                         theAdapter.notifyDataSetChanged();
                         Snackbar.make(send, "You removed item # " + position, Snackbar.LENGTH_LONG)
-                                .setAction("Undo", (click4)-> {
-                                    messages.add(position, whatWasClicked);
-                                    theAdapter.notifyDataSetChanged();
-                                    //reinsert into the database
-                                    theDatabase.execSQL( String.format( " Insert into %s values (\"%d\", \"%s\", \"%d\", \"%s\" );",
-                                            MyOpenHelper.TABLE_NAME      , whatWasClicked.getId()  , whatWasClicked.getMessageTyped() , 1, whatWasClicked.getSendOrReceive()));
+                            .setAction("Undo", (click4)-> {
+                                messages.add(position, whatWasClicked);
+                                theAdapter.notifyDataSetChanged();
+                                //reinsert into the database
+                                theDatabase.execSQL( String.format( " Insert into %s values (\"%d\", \"%s\", \"%d\", \"%s\" );",
+                                        MyOpenHelper.TABLE_NAME      , whatWasClicked.getId()  , whatWasClicked.getMessageTyped() , 1, whatWasClicked.getSendOrReceive()));
 
-                                })
-                                .show();
+                            })
+                            .show();
                         //delete from database:, returns number of rows deleted
                         theDatabase.delete(MyOpenHelper.TABLE_NAME,
                                 MyOpenHelper.COL_ID +" = ?", new String[] { Long.toString( whatWasClicked.getId() )  });
@@ -274,12 +274,10 @@ public class ChatRoomActivity extends AppCompatActivity {
                     view = inflater.inflate(layoutID_SEND, viewType, false);
                 else
                     view = inflater.inflate(layoutID_RECEIVE, viewType, false);
-        }
-
+            }
             TextView messageText  = view.findViewById(R.id.message);
-            messageText .setText( messages.get(position).getMessageTyped() );
+            messageText.setText( messages.get(position).getMessageTyped() );
             return view;
-
         }
 
     }
@@ -295,7 +293,7 @@ public class ChatRoomActivity extends AppCompatActivity {
         //load from the database:
         Cursor results = theDatabase.rawQuery( "Select * from " + MyOpenHelper.TABLE_NAME + ";", null );//no arguments to the query
 
-        printCursor(results,1);
+        printCursor(results,2);
 
         //Convert column names to indices:
         int idIndex = results.getColumnIndex( MyOpenHelper.COL_ID );
