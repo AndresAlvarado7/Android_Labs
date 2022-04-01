@@ -39,10 +39,15 @@ public class ProfileActivity extends AppCompatActivity {
        cam.setOnClickListener(view -> dispatchTakePictureIntent());
 
        Button buttonChat = findViewById(R.id.buttonChat);
-
         buttonChat.setOnClickListener((click) -> {
             Intent goToChat = new Intent(ProfileActivity.this, ChatRoomActivity.class);
             startActivity(goToChat);
+        });
+
+        Button buttonToolbar = findViewById(R.id.buttonToolbar);
+        buttonToolbar.setOnClickListener((click) -> {
+            Intent goToToolbar = new Intent(ProfileActivity.this, TestToolbar.class);
+            startActivity(goToToolbar);
         });
     }
 

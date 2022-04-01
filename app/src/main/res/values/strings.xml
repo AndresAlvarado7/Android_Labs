@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab6</string>
+    <string name="app_name">Lab7</string>
     <string name="EmailAddress">Enter your email address:</string>
     <string name="TypeEmail">Type email here</string>
     <string name="TypePassword">Type your password:</string>
@@ -12,6 +12,7 @@
     <string name="picture">Your picture:</string>
     <string name="ClickButton">Click the button above to take a picture</string>
     <string name="ButtonChat">Go to chat</string>
+    <string name="ButtonToolbar">Go to Toolbar page</string>
     <string name="ButtonSend">SEND</string>
     <string name="ButtonReceive">RECEIVE</string>
     <string name="TypeChat">Type here</string>
@@ -28,5 +29,22 @@
     <string name="fragment_ID">ID=</string>
     <string name="fragment_check">Is a Send Message</string>
     <string name="fragment_button">Hide</string>
+
+    <string name="settings_icon">Settings</string>
+    <string name="search_icon">Search</string>
+    <string name="share_icon">Share</string>
+    <string name="delete_icon">Delete</string>
+
+    <string name="settings_item">You clicked on the overflow menu</string>
+    <string name="search_item">You clicked on item 1</string>
+    <string name="share_item">You clicked on item 2</string>
+    <string name="delete_item">You clicked on item 3</string>
+    <string name="chooseOne">Choose one page</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="chatPage">Chat Page</string>
+    <string name="profilePage">Profile Page</string>
+    <string name="toLogin">Go back to login</string>
 
 </resources>

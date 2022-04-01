@@ -85,4 +85,10 @@
         android:layout_height="wrap_content"
         android:text="@string/ButtonChat" />
 
+    <Button
+        android:id="@+id/buttonToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonToolbar" />
+
 </LinearLayout>

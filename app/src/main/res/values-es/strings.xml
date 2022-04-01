@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab6</string>
+    <string name="app_name">Lab7</string>
     <string name="EmailAddress">Escribe tu email aqui:</string>
     <string name="TypeEmail">Escribir email aqui</string>
     <string name="TypePassword">Escriba su contrasena:</string>
@@ -13,6 +13,7 @@
     <string name="picture">Tu foto:</string>
     <string name="ClickButton">Toca el boton de arriba para tomar foto</string>
     <string name="ButtonChat">Ir al chat</string>
+    <string name="ButtonToolbar">Ir a la pagina de barra de herramientas</string>
     <string name="ButtonSend">Enviar</string>
     <string name="ButtonReceive">Recibir</string>
     <string name="TypeChat">Escribe aqui</string>
@@ -30,4 +31,21 @@
     <string name="fragment_ID">ID=</string>
     <string name="fragment_check">Es un mensaje de Send</string>
     <string name="fragment_button">Esconder</string>
+
+    <string name="settings_icon">Ajustes</string>
+    <string name="search_icon">Buscar</string>
+    <string name="share_icon">Compartir</string>
+    <string name="delete_icon">Eliminar</string>
+
+    <string name="settings_item">Has hecho click en el menu desplegable</string>
+    <string name="search_item">Has hecho click en el item 1</string>
+    <string name="share_item">Has hecho click en el item 2</string>
+    <string name="delete_item">Has hecho click en el item 3</string>
+    <string name="chooseOne">Elija una pagina</string>
+
+    <string name="open">Abierto</string>
+    <string name="close">Cerrado</string>
+    <string name="chatPage">Pagina de Chat</string>
+    <string name="profilePage">Pagina de Perfil</string>
+    <string name="toLogin">Regresar al inicio</string>
 </resources>
